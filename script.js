@@ -6,14 +6,14 @@ const itemTemplate = document.querySelector('#forecast-item');
 const conteiner = document.querySelector('.forecasts');
 
 function generateRandomValue(min, max) {
-  let predictionNumber = Math.floor(Math.random() * (max-min)) + min;
+  const predictionNumber = Math.floor(Math.random() * (max-min)) + min;
   return predictionNumber;
 }
 
 sendButton.addEventListener('click', function(){
-    let num = generateRandomValue(0, 3); 
+    const num = generateRandomValue(0, 3); 
     let predictionText = "";
-    let percentage = generateRandomValue(0, 101);
+    const percentage = generateRandomValue(0, 101);
 
     if (num == 1) {
       predictionText = "Все будет супер!";
